@@ -2,7 +2,7 @@
 icon: box-open
 ---
 
-# ECUP Boxe
+# ECUP Boxes
 
 Loot boxes in ECUP.PRO provide an additional way for players to earn rewards through gameplay. Players receive loot boxes after matches based on drop probabilities, and the contents are randomly selected based on predefined chances.
 

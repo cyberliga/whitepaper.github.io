@@ -2,7 +2,7 @@
 
 * [Overview](README.md)
 * [Levels](levels.md)
-* [ECUP Boxe](ecup-boxe.md)
+* [ECUP Boxes](ecup-boxes.md)
 * [Earning](earning/README.md)
   * [Tokenomic](earning/tokenomic.md)
   * [E-coin earning](earning/e-coin-earning/README.md)
