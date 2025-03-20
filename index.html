@@ -1,11 +1,151 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 
 <head>
+  <meta charset="UTF-8">
+  <title>ECUP.PRO Whitepaper</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      width: 300px;
+      padding: 20px;
+      background-color: #1e1e1e;
+      overflow-y: auto;
+      border-right: 1px solid #333;
+      flex-shrink: 0;
+    }
+
+    .sidebar a {
+      color: #ccc;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .sidebar a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .sidebar a.active {
+      color: #4ea3ff;
+      font-weight: bold;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 30px;
+      overflow-y: auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 16px;
+    }
+
+    .content th,
+    .content td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .content th {
+      background-color: #2b2b2b;
+    }
+
+    .content code {
+      background-color: #2d2d2d;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      color: #ddd;
+    }
+
+    .content h1,
+    .content h2,
+    .content h3 {
+      border-bottom: 1px solid #444;
+      padding-bottom: 8px;
+      margin-top: 20px;
+    }
+
+    .content ul {
+      padding-left: 20px;
+    }
+
+    .description {
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Whitepaper</h1>
-  <p>Whitepaper</p>
+  <div class="sidebar" id="sidebar"></div>
+  <div class="content" id="content">
+    <h2>Choice of content</h2>
+  </div>
+
+  <script>
+    const sidebarDiv = document.getElementById('sidebar');
+    const contentDiv = document.getElementById('content');
+
+    fetch('SUMMARY.md')
+      .then(res => res.text())
+      .then(md => {
+        sidebarDiv.innerHTML = marked.parse(md);
+      });
+
+    function parseFrontMatter(md) {
+      const match = md.match(/^---\n([\s\S]+?)\n---\n([\s\S]*)/);
+      if (match) {
+        const frontMatter = match[1];
+        const content = match[2];
+        const descriptionMatch = frontMatter.match(/description:\s*(.+)/);
+        const description = descriptionMatch ? descriptionMatch[1] : '';
+        return {description, content};
+      }
+      return {description: '', content: md};
+    }
+
+    function loadMarkdown(path) {
+      fetch(path)
+        .then(res => res.text())
+        .then(md => {
+          const {description, content} = parseFrontMatter(md);
+          contentDiv.innerHTML = description ? `<div class="description">${description}</div>` + marked.parse(content) : marked.parse(content);
+
+          document.querySelectorAll('.sidebar a').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === path) {
+              link.classList.add('active');
+            }
+          });
+        });
+    }
+
+    sidebarDiv.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        e.preventDefault();
+        const href = e.target.getAttribute('href');
+        loadMarkdown(href);
+      }
+    });
+  </script>
 </body>
 
 </html>
