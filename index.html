@@ -104,7 +104,7 @@
     const sidebarDiv = document.getElementById('sidebar');
     const contentDiv = document.getElementById('content');
 
-    fetch('SUMMARY.md')
+    fetch(new URL('SUMMARY.md', window.location.href))
       .then(res => res.text())
       .then(md => {
         sidebarDiv.innerHTML = marked.parse(md);
@@ -123,7 +123,7 @@
     }
 
     function loadMarkdown(path) {
-      fetch(path)
+      fetch(new URL(path, window.location.href))
         .then(res => res.text())
         .then(md => {
           const {description, content} = parseFrontMatter(md);
