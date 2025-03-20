@@ -1,3 +1,15 @@
 # Table of contents
 
-* [Page](README.md)
+* [Overview](README.md)
+* [Earning](earning/README.md)
+  * [Tokenomic](earning/tokenomic.md)
+  * [E-coin earning](earning/e-coin-earning/README.md)
+    * [Passive earning](earning/e-coin-earning/passive-earning.md)
+    * [За активности на платформе](earning/e-coin-earning/za-aktivnosti-na-platforme.md)
+    * [Subscribe to social networks](earning/e-coin-earning/subscribe-to-social-networks.md)
+  * [Referral system](earning/referral-system.md)
+  * [Energy System (In development)](earning/energy-system-in-development.md)
+  * [Magic box (In development)](earning/magic-box-in-development.md)
+  * [HP System (In development)](earning/hp-system-in-development.md)
+* [Decentralized Wallet (In development)](decentralized-wallet-in-development.md)
+* [Road map](road-map.md)
