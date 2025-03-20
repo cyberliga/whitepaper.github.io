@@ -2,16 +2,16 @@
 icon: box-open
 ---
 
-# ECUP Boxes
+# ECUP Box
 
-Loot boxes in ECUP.PRO provide an additional way for players to earn rewards through gameplay. Players receive loot boxes after matches based on drop probabilities, and the contents are randomly selected based on predefined chances.
+Boxes in ECUP.PRO provide an additional way for players to earn rewards through gameplay. Players receive boxes after matches based on drop probabilities, and the contents are randomly selected based on predefined chances.
 
 **Box Drop Rates**
 
-| Box Type        | Drop Probability |
-| --------------- | ---------------- |
-| **Common Case** | 30%              |
-| **Epic Case**   | 10%              |
+| Box Type       | Drop Probability |
+| -------------- | ---------------- |
+| **Common Box** | 30%              |
+| **Epic Box**   | 10%              |
 
 ***
 
@@ -19,7 +19,7 @@ Loot boxes in ECUP.PRO provide an additional way for players to earn rewards thr
 
 Each box contains various rewards, including E-coins and fragments, which can be used within the ECUP.PRO ecosystem.
 
-**Common Case Rewards**
+**Common Box Rewards**
 
 | Item      | Quantity | Drop Probability |
 | --------- | -------- | ---------------- |
@@ -29,7 +29,7 @@ Each box contains various rewards, including E-coins and fragments, which can be
 | Fragments | 30       | 15%              |
 | Fragments | 40       | 15%              |
 
-**Esports Epic Case Rewards**
+**Esports Epic Box Rewards**
 
 | Item                           | Quantity | Drop Probability |
 | ------------------------------ | -------- | ---------------- |
@@ -44,8 +44,6 @@ Each box contains various rewards, including E-coins and fragments, which can be
 #### **How to Obtain Loot Boxes**
 
 * **Players receive loot boxes automatically after each match.**
-* The chance to receive a **Common Case** is **30% per match**.
-* The chance to receive an **Esports Epic Case** is **10% per match**.
+* The chance to receive a **Common Box** is **30% per match**.
+* The chance to receive an **Epic Box** is **10% per match**.
 * Contents inside each box are randomly determined based on the probabilities listed above.
-
-These loot boxes offer players an engaging way to accumulate in-game rewards while actively participating in tournaments and matches.
