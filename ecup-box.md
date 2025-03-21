@@ -41,9 +41,9 @@ Each box contains various rewards, including E-coins and fragments, which can be
 
 ***
 
-#### **How to Obtain Loot Boxes**
+#### **How to Obtain Ecup Boxes**
 
-* **Players receive loot boxes automatically after each match.**
+* **Players receive Ecup boxes automatically after each match.**
 * The chance to receive a **Common Box** is **30% per match**.
 * The chance to receive an **Epic Box** is **10% per match**.
 * Contents inside each box are randomly determined based on the probabilities listed above.
