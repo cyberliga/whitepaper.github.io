@@ -1,4 +1,8 @@
-# Daily tasks
+---
+icon: scroll
+---
+
+# Daily quests
 
 Daily quests provide players with additional opportunities to earn rewards by completing specific tasks within the ECUP.PRO ecosystem. Each day, players receive a randomized set of quests with different difficulty levels and rewards.
 

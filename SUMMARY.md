@@ -3,7 +3,7 @@
 * [Overview](README.md)
 * [Levels](levels.md)
 * [ECUP Box](ecup-box.md)
-* [Daily tasks](daily-tasks.md)
+* [Daily quests](daily-quests.md)
 * [Earning](earning/README.md)
   * [Tokenomic](earning/tokenomic.md)
   * [E-coin earning](earning/e-coin-earning/README.md)
