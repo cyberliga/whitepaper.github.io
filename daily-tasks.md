@@ -29,7 +29,7 @@ Daily quests provide players with additional opportunities to earn rewards by co
 
 ***
 
-#### **Bonus Reward for Completing All Quests**
+#### **Bonus Reward for Completing All Quests (In develop)**
 
 * **5% chance** to receive an **Epic Case**.
 * **15% chance** to receive a **Rare Case**.
