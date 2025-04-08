@@ -1,19 +1,12 @@
----
-description: >-
-  Каждый пользователь ECUP.PRO может получить токены выполняя активности на
-  платформе
----
-
 # За активности на платформе
 
-**Пример активностей:**
+Each ECUP.PRO user can earn tokens by completing various activities on the platform.\
+Examples of such activities include:
 
-* Ознакомиться с whitepaper
-* Ознакомиться с инструкцией как играть на платформе
-* Создать кошелек
-* Вступить в турнир
-* Выиграть турнир
+* Reading the whitepaper
+* Reviewing the gameplay guide
+* Creating a wallet
+* Joining a tournament
+* Winning a tournament
 
-
-
-Это только пример активностей, они будут добавляться и меняться с течением временем
+These are just examples. The list of available activities may expand or change over time.
