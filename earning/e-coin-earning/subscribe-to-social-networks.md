@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Subscribe to social networks
 
 Каждый пользователь получает награду от ECUP.PRO за подписки на социальные сети
