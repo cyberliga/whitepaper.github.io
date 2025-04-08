@@ -1,10 +1,8 @@
 ---
-description: Пассивный заработок токенов на ECUP.PRO
+description: 🧱 Passive Farming on ECUP.PRO
 ---
 
 # Passive earning
-
-#### 🧱 Passive Farming on ECUP.PRO
 
 On ECUP.PRO, users can passively earn tokens through the **farming** feature, which simulates a mining-like reward system based on your PC build. Here's how it works:
 
